@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="empty_text">#cccccc</color>
+    <color name="text_secondary">#ffa3a3a3</color>
+    <color name="action_bar">#8B8378</color>
+    <color name="background">#fefefe</color>
+    <color name="navigation_drawer">#F0e3e3e3</color>
+
+</resources>

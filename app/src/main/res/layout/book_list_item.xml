@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/card_background">
+
+    <RelativeLayout
+        android:background="?android:selectableItemBackground"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/standard_padding"
+        android:descendantFocusability="blocksDescendants">
+
+        <ImageButton
+            android:background="@drawable/book_activated"
+            android:focusable="false"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:id="@+id/multi_toggle"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <CheckedTextView
+            android:id="@+id/text1"
+            style="@style/ListItemText.Title"
+            tools:text="TITLE"
+            android:layout_toLeftOf="@+id/overflow"
+            android:layout_toRightOf="@+id/multi_toggle" />
+
+        <TextView
+            android:id="@+id/text2"
+            style="@style/ListItemText.Secondary"
+            tools:text="description"
+            android:layout_gravity="right"
+            android:layout_below="@+id/text1"
+            android:layout_toLeftOf="@+id/overflow"
+            android:layout_alignLeft="@+id/text1"
+            android:layout_alignStart="@+id/text1" />
+
+        <ImageButton
+            android:focusable="false"
+            android:id="@+id/overflow"
+            style="?android:borderlessButtonStyle"
+            android:src="@drawable/ic_action_overflow"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+</FrameLayout>
